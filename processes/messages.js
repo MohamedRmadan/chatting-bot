@@ -12,7 +12,11 @@ module.exports = function processMessage(event) {
         if (message.text) {
             // now we will take the text recieved and send it to an food tracking API.
             let text = message.text;
-            var request = require("request");
+
+
+            senderAction(senderID);
+            sendMessage(senderID, text)
+            /*var request = require("request");
 
             let options = {
                 method: 'POST',
@@ -36,7 +40,7 @@ module.exports = function processMessage(event) {
                 // after the response is recieved we will send the details in a Generic template
                 sendGenericTemplate(senderID, body);
             });
-
+            */
         }
     }
 }
