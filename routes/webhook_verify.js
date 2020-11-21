@@ -1,5 +1,5 @@
 const processPostback = require('../processes/postback');
-const processMessage = require('../processes/messages');
+const processMessage = require('../processes/message');
 
 module.exports = function(app, chalk) {
     app.get('webhook', function(req, res){

@@ -1,4 +1,4 @@
-/*const express = require('express');
+const express = require('express');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 
@@ -21,8 +21,8 @@ app.listen(app.get('port'), function() {
     const url = 'http://localhost:' + app.set('port');
     console.log('app running on port: ' + app.get('port'));
 })
-*/
 
+/*
 var express = require("express");
 var request = require("request");
 var bodyParser = require("body-parser");
@@ -48,3 +48,4 @@ app.get("/webhook", function (req, res) {
     res.sendStatus(403);
   }
 });
+*/
