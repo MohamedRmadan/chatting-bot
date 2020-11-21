@@ -15,7 +15,7 @@ module.exports = function processMessage(event) {
 
 
             senderAction(senderID);
-            sendMessage(senderID, text)
+            sendMessage(senderID, {text: text})
             /*var request = require("request");
 
             let options = {

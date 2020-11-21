@@ -2,6 +2,7 @@ const request = require('request');
 
 module.exports = function sendMessage(recipientId, message){
     return new Promise(function(resolve, reject) {
+        console.log(message);
         request({
             url: "https://graph.facebook.com/v2.6/me/messages",
             qs: {
